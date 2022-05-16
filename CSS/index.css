@@ -1,0 +1,226 @@
+*{
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* força o elemento a obeder o tamanho do container em que foi criado*/
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;   
+}
+
+
+/*Efeito de rolagem suave*/
+
+#section1 {
+ height: auto;
+
+}
+
+#section2 #intro {
+  height:auto;
+ 
+}
+
+#section3 {
+height:auto;
+margin-bottom: 100px;
+}
+/*FIM*/
+
+/*Menu responsivo*/
+.topnav {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFD700;
+  color: red;
+}
+
+.topnav .icon {
+  display: none;
+  background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*FIM*/
+
+#intro{
+    
+  padding: 20px;
+  width: 100%;
+  display: flex; /* para usar as propriedades do flexbox*/
+  flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+  flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+  
+}
+
+.card{
+  margin-top: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+  text-align: left;
+  width: 390px;
+
+  
+}
+
+
+.card .card-body{
+  
+  padding: 50px;
+
+  color: rgb(218, 186, 8);
+}
+
+.col-md-6 p{
+  border-top: 1px solid black;
+ 
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.col-md-6 {
+  
+  text-align: justify;
+  float: left;
+  width: 50%;
+}
+
+.col-md-6 button{
+  background-color: #FFD700;
+  font-size: 18px ;
+  color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+/*ESTÁ TUDO BEM*/
+  /*estilizando a secção Diga-me o que queres*/
+
+  main{
+    text-align: center;
+    width: 100%;
+    
+    
+}
+
+#Servic{
+  padding: 20px;
+  width: 100%;
+  display: flex; /* para usar as propriedades do flexbox*/
+  flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+  flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+  
+}
+
+.cartao{
+  margin-top: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+  text-align: left;
+  width: 400px;;
+  border-radius: 16px;
+}
+
+.cartao img{
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+          /* c.esq c.dir b.esq b.dir  */
+
+}
+
+.cartao .conteudo{
+  padding: 20px;
+}
+
+.cartao .conteudo p{
+  font-size: 14px;
+  color: rgb(218, 186, 8);
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+}
+
+
+/*estilizando a secção sobre mim*/
+
+
+/*botão que te leva para cima*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: rgb(180, 180, 11);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#myBtn:hover {
+  background-color: white;
+}
+/*botão que te leva para cima*/
+
+/*Meu rodapé*/
+  footer{
+    background-color: #222;
+    padding: 30px;
+    margin-top: 100px;
+    color: #fff;
+}
+footer pre{
+  font-size: 18px;
+  text-align:center; /* alinhar o texto ao centro*/
+}
